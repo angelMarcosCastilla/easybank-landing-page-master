@@ -529,13 +529,13 @@ a {
 }
 
 .banner {
-  background: url("../../images/bg-intro-mobile.svg") top/100% 340px no-repeat;
+  background: url("../images/bg-intro-mobile.svg") top/100% 340px no-repeat;
 }
 @media screen and (min-width: 1000px) {
   .banner {
     height: 600px;
     justify-content: space-between;
-    background: url("../../images/bg-intro-desktop.svg") top -260px right -500px/cover no-repeat;
+    background: url("../images/bg-intro-desktop.svg") top -260px right -500px/cover no-repeat;
   }
   .banner .wrapper {
     display: flex;
