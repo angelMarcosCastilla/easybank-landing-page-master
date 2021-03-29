@@ -1,0 +1,96 @@
+.header {
+  position: relative;
+  padding: 1.2rem 0;
+  
+;
+  @media screen and (min-width: 1200px) {
+    padding-top: 1.5rem;
+  }
+  & > .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .btn-menu {
+    width: 25px;
+    height: 15px;
+    background: url(../images/icon-hamburger.svg) center / cover no-repeat;
+    @media screen and (min-width: 1200px) {
+      display: none;
+    }
+  }
+  &-nav {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    height: 100vmax;
+    background: linear-gradient(to bottom, $Dark-Blue 0, transparent 90%);
+    visibility: hidden;
+    z-index: 1;
+    @media screen and (min-width: 1200px) {     
+       position: static;
+      height: auto;
+    }
+    .menu {
+      width: 90%;
+      margin: 20px auto;
+      background: $Light-Grayish-Blue;
+      text-align: center;
+      border-radius: 5px;
+      padding:15px;
+      @media screen and (min-width: 1200px) {
+        width: auto;
+        height: auto;
+        padding: 0;
+        margin: 0;
+        visibility: visible;
+        display: flex;
+        background: none;
+      }
+  
+    &__enlace {
+        display: block;
+        text-decoration: none;
+        color: $Dark-Blue;
+        padding:12px;
+        
+        @media screen and (min-width: 1200px) {
+            padding-bottom:  1rem ;
+            cursor:pointer;
+            &:hover{
+       background: linear-gradient( to right,$Lime-Green , $Bright-Cyan) left bottom/ 100% 3px no-repeat;
+      } 
+    }
+      }
+      &__item{
+        @media screen and (min-width: 1200px) {
+            margin-left: 20px;
+          }
+      }
+    }
+  }
+
+  #cbxMenu {
+    display: none;
+    @media screen and (min-width: 1200px) {
+      display: none;
+    }
+    &:checked {
+      & ~ .header-nav {
+        visibility: visible;
+      }
+      & ~ .btn-menu {
+        background: url("../images/icon-close.svg") center / cover no-repeat;
+      }
+    }
+  }
+
+  .btn {
+    display: none;
+    @media screen and (min-width: 1200px) {
+      display: block;
+    }
+  }
+}

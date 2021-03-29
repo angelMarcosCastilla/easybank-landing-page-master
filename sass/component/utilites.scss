@@ -1,0 +1,59 @@
+.btn {
+  min-width: 200px;
+  outline: none;
+  border: none;
+  padding: 1rem.8rem;
+  border-radius: 50px;
+  background: linear-gradient(to right, $Lime-Green, $Bright-Cyan);
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  &:hover {
+    filter: opacity(0.6);
+  }
+}
+
+.bg-light-gray {
+  background-color: $Very-Light-Gray;
+}
+.bg-dark-gray {
+  background-color: $Light-Grayish-Blue;
+}
+
+.text {
+  text-align: center;
+  color: $Grayish-Blue;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  @media screen and (min-width: 700px) {
+     text-align: left;
+    
+    
+  }
+}
+.bg-white {
+  background-color: $White;
+}
+
+.title-2{
+  margin: 0;
+    text-align: center;
+    font-size: 1.9rem;
+    font-weight: 400;
+    color: $Dark-Blue;
+    @media screen and (min-width: 900px) {
+       text-align: left;
+    }
+
+}
+
+.title-3{
+  color: $Dark-Blue;
+  font-size: 1.2rem;
+}
+.grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  grid-gap: 20px;
+}
